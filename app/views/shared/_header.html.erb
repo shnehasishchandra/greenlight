@@ -77,10 +77,10 @@
                 <% end %>
               <% end %>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="http://docs.bigbluebutton.org/install/greenlight-v2.html" target="_blank" rel="noopener">
+              <a class="dropdown-item" href="https://mstitute.com/" target="_blank" rel="noopener">
                 <i class="dropdown-icon far fa-question-circle"></i> <%= t("header.dropdown.help") %>
               </a>
-              <% if Rails.configuration.report_issue_url.present? %>
+              <% if false && Rails.configuration.report_issue_url.present? %>
                 <a class="dropdown-item" href="<%= Rails.configuration.report_issue_url %>" target="_blank" rel="noopener">
                   <i class="dropdown-icon fas fa-exclamation mr-3"></i><%= t("errors.internal.report") %>
                 </a>
@@ -100,7 +100,7 @@
             <%= link_to t("login"), signin_path, :class => "btn btn-outline-primary mx-2 sign-in-button" %>
           <% end %>
 
-          <% if allow_user_signup? && allow_greenlight_accounts %>
+          <% if false && allow_user_signup? && allow_greenlight_accounts %>
             <%= link_to t("signup.title"), signup_path, :class => "btn btn-outline-primary mx-2 sign-in-button" %>
           <% end %>
         <% end %>
