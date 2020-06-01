@@ -20,7 +20,7 @@
         <%= image_tag(logo_image, class: "header-brand-img", alt:"") %>
       <% end %>
 
-      <div class="d-flex ml-auto">
+      <div class="ml-auto">
         <% if current_user %>
 
           <% if current_user.has_role? :super_admin %>
