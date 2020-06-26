@@ -3,7 +3,7 @@ version: '2'
 services:
   app:
     entrypoint: [bin/start]
-    image: sujok:release-v2
+    image: kdm:release-v2
     container_name: greenlight-v2
     env_file: .env
     restart: unless-stopped
